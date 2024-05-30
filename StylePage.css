@@ -1,0 +1,297 @@
+
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  /* ajouter l'image */
+  background-image: url("lorient_ensibs-sans-credit.jpg");
+
+  min-height: 380px;
+
+  /* Centrer et redimensionner  l'image */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Ajouter des styles au conteneur de formulaire */
+.container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: white;
+}
+
+/* Champs de saisie  */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Définir le style pour le bouton d'envoi */
+.btn {
+  background-color: #419932;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+p,h3 {
+    color: dimgrey;
+    font-size:18px;
+    font-weight:normal;
+}
+
+.button-style{
+        background-color: #419932; /* Couleur de fond */  
+        border: none; /* Pas de bordure */ 
+        color: white; 
+        padding: 15px 20px; /* Espacement interne */
+        text-align: center; /* Alignement du texte */ 
+        text-decoration: none; /* Pas de soulignement */ 
+        display: inline-block; /* Type d'affichage */ 
+        font-size: 18px; /* Taille de police */ 
+        margin: 4px 2px; /* Marges externes */ 
+        cursor: pointer; /* forme de curseur */ 
+        font-weight: bold; /* Applique en gras */ 
+        font-family:arial;
+}
+
+.button-container{
+  margin: 20px;
+  width: 70%;
+  margin: 5px auto; /* Centre horizontalement */
+    
+}
+/* ici pas besoins de . car a fait parti du langage HTML*/
+a{
+    color: #419932;
+    font-size: 18px;
+    font-family:arial;
+    text-decoration:none
+}
+
+
+.main{
+display: flex;
+flex: 1;  /* permet d'ajouter des sections, 1 divise par 2 les sections*/ 
+width: 70%;/* permet d'ajouter des marges de 15% de chaque coté*/
+margin: 20px auto;
+} 
+
+.content{
+width: 80%;
+padding: 20px;
+}
+
+.sectionleft1{
+width: 40%;
+display: flex;
+flex-direction: column;
+padding: 20px;
+}
+
+.sectionleft2{
+background-color: #f0f0f0;
+width: 230px;
+padding: 10px;
+margin: 10px;
+}
+
+span{
+    color: dimgray; 
+    font-weight:bold"
+}
+
+.containerleftright{
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 5px auto; /*centre le contenu horizontalement*/
+}
+
+.left, .right{
+  width: 60%;
+  padding: 5px;
+}
+
+/*Container média régroupe tous les éléments vidéos + texte */
+
+.containerMedia {
+  width: 80%;
+  margin: auto; /*centre le contenu */
+}
+
+.video-container {
+  display: flex;
+  justify-content: space-around; /* Espacement égal entre les vidéos */
+  align-items: center;
+  margin-top: 20px;
+}
+
+.video {
+  flex: 1;
+  margin: 10px;
+}
+
+iframe { /*Balise pour intégrer la vidéo YouTube, avec des attributs :*/
+  width: 100%;
+  height: 350px;
+}
+
+h1 {
+  font-family: Arial
+}
+
+.button-ceremony {
+  background-color: #419932; /* Couleur de fond */  
+  border: 5px solid black; /* Pas de bordure */ 
+  color: white; 
+  padding: 15px 30px; /* Espacement interne */
+  text-align: center; /* Alignement du texte */ 
+  font-weight: bold; /* Applique en gras */ 
+  font-family:arial;
+  font-size: 18px;
+  margin: 8px 50px; /* Marges externes */ 
+  border-radius: 10px; /* Arrondi du bouton */
+  box-shadow: 0 10px 15px#419932;
+  cursor: pointer; /* forme de curseur */
+}
+
+.container-ceremony {
+  width: 70%;
+  margin: auto;
+}
+
+.container-information{
+  width: 90%;
+  margin: 2px auto; /*centre le contenu */
+  padding: 30px;
+}
+
+table,th,td {
+  border: 1px solid black;
+  border-collapse: collapse; /*PERMET DE NE PAS AVOIR DE BORDURE DOUBLE Bordure adjacente des cellules */
+}
+
+th {
+  text-align: left;
+}
+
+/*Table 2 */
+
+caption {
+  caption-side: top; /*Légende AU DESSUS */
+  font-size: 18px;
+  margin-bottom: 10px; /*Espace entre Légende et tableau */
+  font-weight: bold;
+  text-align: center;
+  color: #419932; 
+}
+
+.third-table {
+  width: 100%;
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
+.third-table tr:nth-child(even), .third-table th:nth-child(even), .third-table td:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+/*ATTENTION ID AVEC # et utilisé que 1 seule fois */
+
+#myfooter {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+
+#myfooterJS{
+  font-size: 36px;
+  text-align: center;
+  margin-top: 50px;
+  text-transform: uppercase; /*Transformer le texte en MAJ */
+  letter-spacing: 2px;
+}
+
+#myfooterJS:hover{ /*Changer la couleur en passant la souris sur l'écriture */
+  color: #419932;
+}
+
+#button-myfooter{
+  display: block;
+  margin: 20px auto;
+  cursor: pointer;
+  background-color: lightblue; /*Couleur de fond */
+  color: black;
+  border: 5px solid black;
+  padding: 15px 40px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#button-myfooter:hover {
+  background-color: #419932;
+}
+
+ /*Style pour IFRAME */
+
+#Iframe_ENSIBS{
+  border: 2px solid black;
+  border-radius:  5px;
+}
+
+#Iframe_ENSIBS_a{
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#Iframe_ENSIBS_a:hover{
+  text-decoration: underline ;
+}
+
+#button-myfooter-informations{
+
+  margin: 10px ;
+  cursor: pointer;
+  background-color: lightblue; /*Couleur de fond */
+  border-radius: 10px;
+  color: black;
+  border: 5px solid black;
+  padding: 15px 40px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}

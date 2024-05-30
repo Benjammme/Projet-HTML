@@ -1,0 +1,44 @@
+<!-- Information et page dans page--> 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title> Information </title>
+</head>
+
+<!-- Lien vers le fichier CSS --> 
+<link rel="stylesheet" href="StylePage.css">
+<!-- Lien vers la page1  -->
+<a href="Alternance.html"><img src="logoGI.jpg" width="220px" height="200px" alt=""></a>
+
+<body>
+    <div class="container-information">
+        <!-- Page plus d'informations : ajouter un cadre en igne -->
+        <!-- IFRAME : afficher une page web dans une page web -->  
+        <h2>Plus d'informations</h2>
+        <iframe src="https://www-ensibs.univ-ubs.fr/fr/index.html" frameborder="0" height="300px" width="100px" id="Iframe_ENSIBS"></iframe>
+        <h3>Découvrir plus d'informations sur notre site</h3>
+        <a href="https://www-ensibs.univ-ubs.fr/fr/formations/formations-d-ingenieurs/genie-industriel-4-0.html" target="Iframe_GI" id="Iframe_ENSIBS_a">ensibs.fr</a>
+
+        <!-- Modifier le contenu et le style par JS -->
+        <h2>Nous contacter</h2>
+        <h3 id="MyfooterJS2">Retrouver nous sur le site de Lorient</h3>
+        <script>
+            function myfunction(){
+                document.getElementById("MyfooterJS2").style.fontSize="35px";
+                document.getElementById("MyfooterJS2").style.color="black";
+                document.getElementById("MyfooterJS2").style.backgroundColor="#2980b9";
+                document.getElementById("MyfooterJS2").innerHTML="Adresse: 17 Bd Flandre Dunkerque 1940, 56100 Lorient";
+            }
+        </script>
+        <button onclick="myfunction()" id="button-myfooter">Retouvez-Nous !</button>
+
+        <!-- Affichage heure -->
+        <h2>Dernière consultation</h2>
+        
+        <button type="button" id="button-myfooter-informations" onclick="document.getElementById('consultation').innerHTML = new Date().toLocaleString('fr-FR', { weekday:'long', year:'numeric', 
+        month:'long', day:'numeric', hour:'2-digit', minute:'2-digit', second:'2-digit' })">Cliquez Ici</button>
+
+        <p id="consultation"></p>
+    </div>
+</body>
+</html>
